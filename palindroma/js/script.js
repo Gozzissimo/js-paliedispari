@@ -3,12 +3,27 @@
 // Creare una funzione per capire se la parola inserita è palindroma
 //     (prima senza funzione e poi con funzione)
 
-const word = prompt('Inserisci una Parola');
+// 1.
+    const word = prompt('Inserisci una Parola').toLowerCase();
 
-// console.log(word.split('').reverse().join(''));
+    // // console.log(word.split('').reverse().join(''));
 
-if (word.split('').reverse().join('') == word) {
-    console.log('la parola è palindroma');
-} else {
-    console.log('non è palindroma');
+    // if (word.split('').reverse().join('') == word) {
+    //     console.log('la parola è palindroma');
+    // } else {
+    //     console.log('non è palindroma');
+    // }
+
+
+// 2.
+function isPalindrome(word) {
+    let result = '';
+
+    if (word == word.split('').reverse().join('')) {
+        return 'la parola è palindroma';
+    } else {
+        return 'la parola non è palindroma';
+    }
 }
+
+// console.log(isPalindrome(word));
