@@ -16,8 +16,7 @@
 
 
 // 2.
-function isPalindrome(word) {
-    let result = '';
+function isPalindrome(string) {
 
     if (word == word.split('').reverse().join('')) {
         return 'la parola è palindroma';
@@ -26,4 +25,4 @@ function isPalindrome(word) {
     }
 }
 
-// console.log(isPalindrome(word));
+console.log(isPalindrome(word));
