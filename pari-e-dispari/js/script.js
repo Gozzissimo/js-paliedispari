@@ -41,7 +41,20 @@ function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+// somma
 function sum(num1, num2) {
-    return num1 + num2
+    return num1 + num2;
 }
+
+// pari o dispari
+function isEvenorOdd(num) {
+    if (num % 2 == 0) {
+        return 'pari';
+    } else {
+        return 'dispari';
+    }
+}
+
+
+
 
